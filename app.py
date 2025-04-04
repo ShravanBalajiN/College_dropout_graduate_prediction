@@ -6,18 +6,12 @@ import numpy as np
 model_filename = "RandomForestClassifier_best_model.joblib"
 model = joblib.load(model_filename)
 
-# Define the input fields based on the dataset (excluding removed features)
-feature_names = [
-    "Marital status", "Course", "Previous qualification", 
-    "Previous qualification (grade)", "Nacionality", "Mother's qualification", "Father's qualification", "Admission grade", "Displaced", 
-    "Educational special needs", "Debtor", "Tuition fees up to date", "Gender", "Scholarship holder", 
-    "Age at enrollment", "Curricular units 1st sem (credited)", "Curricular units 1st sem (enrolled)", 
-    "Curricular units 1st sem (evaluations)", "Curricular units 1st sem (approved)", 
-    "Curricular units 1st sem (grade)", "Curricular units 1st sem (without evaluations)", 
-    "Curricular units 2nd sem (credited)", "Curricular units 2nd sem (enrolled)", 
-    "Curricular units 2nd sem (evaluations)", "Curricular units 2nd sem (approved)", 
-    "Curricular units 2nd sem (grade)", "Curricular units 2nd sem (without evaluations)", 
-    "Unemployment rate", "Inflation rate", "GDP"
+feature_names =  [
+    "Admission grade", "Previous qualification (grade)", "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)", "Curricular units 1st sem (grade)", 
+    "Curricular units 2nd sem (enrolled)", "Curricular units 2nd sem (approved)", 
+    "Curricular units 2nd sem (grade)", "Tuition fees up to date", "Scholarship holder", 
+    "Age at enrollment"
 ]
 
 # Streamlit UI
